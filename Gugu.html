@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="gaga.css">
+</head>
+<body>
+
+    <div class="task-manager">
+        <h1>Task Management System</h1>
+        
+        <div class="task-form">
+            <h3>Create a Task</h3>
+            <input type="text" id="taskName" placeholder="Task Title">
+            <input type="text" id="taskCategory" placeholder="Category">
+            <input type="date" id="taskDeadline">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div class="task-filter">
+            <h3>Filter Tasks by Category</h3>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+
+        <div class="task-list">
+            <h3>Your Tasks</h3>
+            <ul id="tasks">
+                <!-- Task items will be added here by JavaScript -->
+            </ul>
+        </div>
+
+        <div id="deadlineAlerts">
+            <!-- Alerts for upcoming or overdue tasks -->
+        </div>
+    </div>
+
+    <script src="gogo.js"></script>
+</body>
+</html>

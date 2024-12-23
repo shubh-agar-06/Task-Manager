@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #92d8d9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgb(244, 247, 250);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(195, 231, 37, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-form input, 
+.task-form select, 
+.task-form button {
+    padding: 10px;
+    margin: 5px;
+    flex: 1;
+}
+
+#addTaskBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0.5;
+}
+
+#addTaskBtn:hover {
+    background-color: #3b2188;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+button.complete-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.complete-btn:hover {
+    background-color: #138496;
+}
+
+/* Additional CSS for task status */
+.task-overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.task-upcoming {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#deadlineAlerts {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
